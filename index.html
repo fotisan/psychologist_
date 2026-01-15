@@ -36,30 +36,14 @@
 </head>
 
 <body>
-  <!-- Top bar -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-left">
-        <!-- DEMO badge removed -->
-        <span class="badge">4.9 out of 5</span>
-        <span class="muted">based on one hundred plus client reviews</span>
-      </div>
-
-      <div class="topbar-right">
-        <a class="toplink" href="tel:+442000000000">Call: +44 20 0000 0000</a>
-        <span class="dot">•</span>
-        <a class="toplink" href="mailto:hello@amelia-grant.co.uk">hello@amelia-grant.co.uk</a>
-      </div>
-    </div>
-  </div>
-
   <!-- Header -->
   <header class="header" id="top">
     <div class="container header-inner">
       <a class="logo" href="#top" aria-label="Home">
-        <span class="logo-mark" aria-hidden="true"></span>
-        <span class="logo-text">Amelia Grant</span>
-        <span class="logo-sub">Psychologist, London</span>
+        <span class="logo-stack">
+          <span class="logo-text">Amelia Grant</span>
+          <span class="logo-sub">Psychologist, London</span>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
@@ -163,27 +147,38 @@
     <div class="hero-bg" aria-hidden="true"></div>
   </section>
 
+  <!-- Trust + contact ribbon (moved from above the nav) -->
+  <section class="ribbon" aria-label="Reviews and quick contact">
+    <div class="container ribbon-inner">
+      <div class="ribbon-left">
+        <span class="badge">4.9 out of 5</span>
+        <span class="muted">based on one hundred plus client reviews</span>
+      </div>
+
+      <div class="ribbon-right">
+        <a class="toplink" href="tel:+442000000000">Call: +44 20 0000 0000</a>
+        <span class="dot">•</span>
+        <a class="toplink" href="mailto:hello@amelia-grant.co.uk">hello@amelia-grant.co.uk</a>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
   <section class="section">
     <div class="container split">
       <div>
-        <!-- Bio images (1 real + space for 2 more) -->
-        <div class="bio-media" aria-label="Practice photos">
-          <div class="bio-photo">
+        <!-- Bio (small avatar style photo) -->
+        <div class="bio-head" aria-label="Therapist profile">
+          <div class="bio-avatar">
             <img
               src="london-psychologist-bio.png"
-              alt="Dr Amelia Grant in London practice"
+              alt="Portrait of Dr Amelia Grant"
               loading="lazy"
             />
           </div>
-
-          <div class="bio-side" aria-hidden="true">
-            <div class="bio-tile bio-placeholder">
-              <span>Add a second photo</span>
-            </div>
-            <div class="bio-tile bio-placeholder">
-              <span>Add a third photo</span>
-            </div>
+          <div>
+            <p class="bio-kicker muted">Dr Amelia Grant</p>
+            <p class="bio-sub">Psychologist, London</p>
           </div>
         </div>
 
@@ -236,6 +231,25 @@
     </div>
   </section>
 
+  <!-- Practice photos (moved from Bio placeholders) -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">The practice space</h2>
+        <p class="section-lead">A calm setting designed to feel private, welcoming, and grounded. Add two photos here to make the practice feel real.</p>
+      </div>
+
+      <div class="gallery" aria-label="Practice photos">
+        <div class="gallery-tile gallery-placeholder" aria-hidden="true">
+          <span>Add a second photo</span>
+        </div>
+        <div class="gallery-tile gallery-placeholder" aria-hidden="true">
+          <span>Add a third photo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Services -->
   <section class="section section-alt" id="services">
     <div class="container">
@@ -248,42 +262,39 @@
 
       <div class="cards">
         <article class="card">
-          <h3 class="card-h">Therapy for anxiety and stress</h3>
-          <p class="card-p">Reduce overthinking, calm the nervous system, and build confidence in daily life again.</p>
-          <p class="card-meta">Common focus: panic, health anxiety, social anxiety, constant tension</p>
+          <h3 class="card-h">Anxiety and overthinking</h3>
+          <p class="card-p">Learn how to calm your body, soften intrusive thoughts, and feel more in control.</p>
+          <p class="card-mini muted">CBT informed, emotion focused support</p>
         </article>
 
         <article class="card">
-          <h3 class="card-h">Depression and low mood</h3>
-          <p class="card-p">Gently move from numbness and fatigue toward motivation, meaning, and connection.</p>
-          <p class="card-meta">Common focus: low energy, self criticism, loss of interest, isolation</p>
+          <h3 class="card-h">Stress and burnout</h3>
+          <p class="card-p">Rebuild energy, set boundaries, and stop carrying everything alone.</p>
+          <p class="card-mini muted">For professionals under pressure</p>
         </article>
 
         <article class="card">
-          <h3 class="card-h">Relationships and attachment</h3>
-          <p class="card-p">Improve communication, boundaries, and emotional safety, with less conflict and more clarity.</p>
-          <p class="card-meta">Common focus: recurring patterns, trust, intimacy, family dynamics</p>
+          <h3 class="card-h">Relationships</h3>
+          <p class="card-p">Work through attachment patterns, communication, and trust, with clarity and kindness.</p>
+          <p class="card-mini muted">Healthy closeness, without losing yourself</p>
         </article>
 
         <article class="card">
-          <h3 class="card-h">Burnout and performance pressure</h3>
-          <p class="card-p">Stop running on empty. Recover focus, sleep, and a sense of control without guilt.</p>
-          <p class="card-meta">Common focus: work stress, perfectionism, decision fatigue</p>
+          <h3 class="card-h">Life transitions</h3>
+          <p class="card-p">Support through breakups, moves, identity changes, grief, and major decisions.</p>
+          <p class="card-mini muted">A grounded space while things shift</p>
         </article>
 
         <article class="card">
-          <h3 class="card-h">Trauma and difficult experiences</h3>
-          <p class="card-p">Process what happened safely, reduce triggers, and feel more present in your life.</p>
-          <p class="card-meta">Common focus: overwhelm, nightmares, hypervigilance, shame</p>
+          <h3 class="card-h">Self esteem</h3>
+          <p class="card-p">Move from self criticism to self respect, and feel safer being seen.</p>
+          <p class="card-mini muted">Confidence built from the inside</p>
         </article>
 
-        <article class="card card-highlight">
-          <h3 class="card-h">First consultation</h3>
-          <p class="card-p">A focused session to understand the problem, define goals, and agree on a plan you can commit to.</p>
-          <div class="card-cta-row">
-            <a class="btn btn-primary btn-sm" href="#contact">Book a consultation</a>
-            <a class="btn btn-ghost btn-sm" href="#fees">See fees</a>
-          </div>
+        <article class="card">
+          <h3 class="card-h">Low mood</h3>
+          <p class="card-p">Understand what pulls you down and create routines that support recovery.</p>
+          <p class="card-mini muted">Gentle, practical steps forward</p>
         </article>
       </div>
     </div>
@@ -295,8 +306,7 @@
       <div>
         <h2 class="section-title">Approach</h2>
         <p class="section-lead">
-          Therapy works best when it is both emotionally honest and practically useful.
-          We combine depth with tools, so progress shows up in real life.
+          Therapy should feel human, clear, and respectful. We move at a pace that feels safe, while still creating real change.
         </p>
 
         <div class="steps">
@@ -304,15 +314,15 @@
             <div class="step-n">1</div>
             <div class="step-b">
               <h3 class="step-h">Understand what is happening</h3>
-              <p class="step-p">We map triggers, patterns, and the story behind them, without judgement.</p>
+              <p class="step-p">We map patterns and triggers, without judgement, so the situation finally makes sense.</p>
             </div>
           </div>
 
           <div class="step">
             <div class="step-n">2</div>
             <div class="step-b">
-              <h3 class="step-h">Build stability first</h3>
-              <p class="step-p">Sleep, stress response, boundaries, and emotional regulation, so you feel safer inside your body.</p>
+              <h3 class="step-h">Build emotional stability</h3>
+              <p class="step-p">We work with thoughts and feelings, and practise tools that reduce overwhelm.</p>
             </div>
           </div>
 
@@ -331,7 +341,9 @@
           “You do not need to be in crisis to start therapy. You just need to be ready for things to be better than they are now.”
         </p>
         <div class="quote-meta">
-          <div class="avatar" aria-hidden="true"></div>
+          <div class="avatar">
+            <img src="london-psychologist-bio.png" alt="Portrait of Dr Amelia Grant" loading="lazy" />
+          </div>
           <div>
             <p class="quote-name">Dr Amelia Grant</p>
             <p class="small muted">Private practice, London</p>
@@ -360,37 +372,25 @@
   <section class="section section-alt" id="testimonials">
     <div class="container">
       <div class="section-head">
-        <h2 class="section-title">What clients say</h2>
-        <p class="section-lead">
-          Short, anonymised feedback. Therapy is personal, so results look different for each person.
-        </p>
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-lead">Short notes from clients. Replace with real feedback if this is a real practice.</p>
       </div>
 
       <div class="testimonials">
-        <figure class="tcard">
-          <blockquote class="tquote">
-            I finally feel calm in situations that used to spiral me. Sessions were structured and human, not clinical.
-          </blockquote>
-          <figcaption class="tmeta">Client in London</figcaption>
-        </figure>
+        <article class="tcard">
+          <p class="ttext">“I felt understood quickly. The sessions were calm but surprisingly effective.”</p>
+          <p class="tmeta muted">Client, London</p>
+        </article>
 
-        <figure class="tcard">
-          <blockquote class="tquote">
-            We worked on patterns I did not even notice. The change was subtle at first, then it became obvious.
-          </blockquote>
-          <figcaption class="tmeta">Online client</figcaption>
-        </figure>
+        <article class="tcard">
+          <p class="ttext">“I stopped overthinking everything. The tools were practical and the pace felt safe.”</p>
+          <p class="tmeta muted">Client, Online</p>
+        </article>
 
-        <figure class="tcard">
-          <blockquote class="tquote">
-            I came for anxiety, stayed for clarity. I make decisions faster and I am kinder to myself.
-          </blockquote>
-          <figcaption class="tmeta">Client, young professional</figcaption>
-        </figure>
-      </div>
-
-      <div class="center mt-20">
-        <a class="btn btn-primary" href="#contact">Start with a consultation</a>
+        <article class="tcard">
+          <p class="ttext">“I finally learned how to set boundaries without guilt. Life feels lighter.”</p>
+          <p class="tmeta muted">Client, London</p>
+        </article>
       </div>
     </div>
   </section>
@@ -558,33 +558,24 @@
 
         <label class="field">
           <span class="label">Full name</span>
-          <input class="input" name="name" type="text" autocomplete="name" required />
-          <span class="error" data-error="name"></span>
+          <input class="input" type="text" name="name" autocomplete="name" required />
+          <span class="error" data-error-for="name"></span>
         </label>
 
         <label class="field">
-          <span class="label">Phone number</span>
-          <input class="input" name="phone" type="tel" autocomplete="tel" required />
-          <span class="error" data-error="phone"></span>
+          <span class="label">Email</span>
+          <input class="input" type="email" name="email" autocomplete="email" required />
+          <span class="error" data-error-for="email"></span>
         </label>
 
         <label class="field">
-          <span class="label">Email address</span>
-          <input class="input" name="email" type="email" autocomplete="email" required />
-          <span class="error" data-error="email"></span>
-        </label>
-
-        <label class="field">
-          <span class="label">Your message</span>
+          <span class="label">What would you like support with?</span>
           <textarea class="input textarea" name="message" rows="5" required></textarea>
-          <span class="error" data-error="message"></span>
+          <span class="error" data-error-for="message"></span>
         </label>
 
-        <button class="btn btn-primary btn-full" type="submit">Send</button>
-
-        <p class="small muted">
-          Your data is safe and confidential. This form is a demo and does not send anywhere until you connect it to a backend.
-        </p>
+        <button class="btn btn-primary btn-full" type="submit">Send message</button>
+        <p class="small muted center">This demo form does not send. Connect it to your email provider.</p>
       </form>
     </div>
   </section>
@@ -592,9 +583,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div>
+      <div class="foot-left">
         <p class="foot-brand">Amelia Grant</p>
-        <p class="small muted">Psychologist in London. In person and online therapy.</p>
+        <p class="small muted">
+          Private psychotherapy in London. In person and online.
+        </p>
 
         <div class="socials" aria-label="Social media">
           <a class="foot-link social-pill icon-link" href="#" target="_blank" rel="noopener" aria-label="Instagram">
