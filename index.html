@@ -40,20 +40,15 @@
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
-        <span class="badge badge-demo">DEMO</span>
+        <!-- DEMO badge removed -->
         <span class="badge">4.9 out of 5</span>
         <span class="muted">based on one hundred plus client reviews</span>
       </div>
+
       <div class="topbar-right">
         <a class="toplink" href="tel:+442000000000">Call: +44 20 0000 0000</a>
         <span class="dot">•</span>
         <a class="toplink" href="mailto:hello@amelia-grant.co.uk">hello@amelia-grant.co.uk</a>
-        <span class="dot">•</span>
-        <div class="socials-inline" aria-label="Social media">
-          <a class="toplink social-link" href="#" target="_blank" rel="noopener">Instagram</a>
-          <a class="toplink social-link" href="#" target="_blank" rel="noopener">TikTok</a>
-          <a class="toplink social-link" href="#" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
       </div>
     </div>
   </div>
@@ -80,6 +75,30 @@
           <a class="nav-link" href="#fees">Fees</a>
           <a class="nav-link" href="#faq">FAQ</a>
           <a class="nav-link nav-cta" href="#contact">Book a consultation</a>
+
+          <!-- Socials in NAV (icons) -->
+          <div class="nav-socials" aria-label="Social media">
+            <a class="icon-link" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Z"/>
+                <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.1a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Z"/>
+                <path d="M18 6.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/>
+              </svg>
+            </a>
+
+            <a class="icon-link" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M14 3v9.2a3.8 3.8 0 1 1-3-3.7V6.2a6 6 0 1 0 5 5.9V8.1c1.2 1.1 2.7 1.8 4.3 2V7.9A6 6 0 0 1 14 3Z"/>
+              </svg>
+            </a>
+
+            <a class="icon-link" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M6.5 6.8A1.8 1.8 0 1 1 6.5 3a1.8 1.8 0 0 1 0 3.8ZM5 21V9h3v12H5Z"/>
+                <path d="M10 21V9h2.9v1.6h.1c.6-1.1 1.8-2 3.7-2 3 0 4.3 2 4.3 5.3V21h-3v-6c0-1.7-.4-3-2.1-3-1.6 0-2.5 1.1-2.5 3V21h-3Z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
@@ -90,9 +109,7 @@
     <div class="container hero-inner">
       <div class="hero-copy">
         <p class="kicker">Private psychotherapy in London</p>
-        <h1 class="hero-title">
-          Compassionate therapy that helps you feel steady again
-        </h1>
+        <h1 class="hero-title">Compassionate therapy that helps you feel steady again</h1>
         <p class="hero-lead">
           Support for anxiety, stress, relationships, burnout, grief, and life transitions.
           In person in London and online across the UK, with a calm, structured process that respects your pace.
@@ -150,6 +167,26 @@
   <section class="section">
     <div class="container split">
       <div>
+        <!-- Bio images (1 real + space for 2 more) -->
+        <div class="bio-media" aria-label="Practice photos">
+          <div class="bio-photo">
+            <img
+              src="london-psychologist-bio.png"
+              alt="Dr Amelia Grant in London practice"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="bio-side" aria-hidden="true">
+            <div class="bio-tile bio-placeholder">
+              <span>Add a second photo</span>
+            </div>
+            <div class="bio-tile bio-placeholder">
+              <span>Add a third photo</span>
+            </div>
+          </div>
+        </div>
+
         <h2 class="section-title">Your psychologist in London</h2>
         <p class="section-lead">
           I am Dr Amelia Grant, a psychologist working with people who look fine on the outside, yet feel stretched, anxious, stuck, or emotionally exhausted.
@@ -194,9 +231,7 @@
         </div>
 
         <a class="btn btn-primary btn-full" href="#contact">Ask about availability</a>
-        <p class="small muted center">
-          Your information stays private. No third parties.
-        </p>
+        <p class="small muted center">Your information stays private. No third parties.</p>
       </div>
     </div>
   </section>
@@ -426,9 +461,7 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">FAQ</h2>
-        <p class="section-lead">
-          The practical questions people usually ask before they book.
-        </p>
+        <p class="section-lead">The practical questions people usually ask before they book.</p>
       </div>
 
       <div class="accordion" data-accordion>
@@ -448,9 +481,7 @@
           <span class="acc-ic" aria-hidden="true"></span>
         </button>
         <div class="acc-a" hidden>
-          <p>
-            Yes. Online sessions are available across the UK through secure video. The work is the same, just in a different setting.
-          </p>
+          <p>Yes. Online sessions are available across the UK through secure video. The work is the same, just in a different setting.</p>
         </div>
 
         <button class="acc-item" aria-expanded="false">
@@ -566,9 +597,26 @@
         <p class="small muted">Psychologist in London. In person and online therapy.</p>
 
         <div class="socials" aria-label="Social media">
-          <a class="foot-link social-pill" href="#" target="_blank" rel="noopener">Instagram</a>
-          <a class="foot-link social-pill" href="#" target="_blank" rel="noopener">TikTok</a>
-          <a class="foot-link social-pill" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="foot-link social-pill icon-link" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Z"/>
+              <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.1a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Z"/>
+              <path d="M18 6.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/>
+            </svg>
+          </a>
+
+          <a class="foot-link social-pill icon-link" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M14 3v9.2a3.8 3.8 0 1 1-3-3.7V6.2a6 6 0 1 0 5 5.9V8.1c1.2 1.1 2.7 1.8 4.3 2V7.9A6 6 0 0 1 14 3Z"/>
+            </svg>
+          </a>
+
+          <a class="foot-link social-pill icon-link" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6.5 6.8A1.8 1.8 0 1 1 6.5 3a1.8 1.8 0 0 1 0 3.8ZM5 21V9h3v12H5Z"/>
+              <path d="M10 21V9h2.9v1.6h.1c.6-1.1 1.8-2 3.7-2 3 0 4.3 2 4.3 5.3V21h-3v-6c0-1.7-.4-3-2.1-3-1.6 0-2.5 1.1-2.5 3V21h-3Z"/>
+            </svg>
+          </a>
         </div>
       </div>
 
