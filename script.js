@@ -5,6 +5,7 @@
   - Scroll to top
   - Current year
   - Lightweight form validation
+  - Scroll reveal (load on user scroll)
 */
 
 (function () {
@@ -119,5 +120,30 @@
         });
       });
     }
+
+    // Scroll reveal (load on user scroll)
+    const revealEls = Array.from(document.querySelectorAll(".reveal"));
+    if (!revealEls.length) return;
+
+    const show = (el) => el.classList.add("in-view");
+
+    if (!("IntersectionObserver" in window)) {
+      revealEls.forEach(show);
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            show(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
+    );
+
+    revealEls.forEach((el) => io.observe(el));
   });
 })();
