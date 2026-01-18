@@ -54,10 +54,28 @@ a{ color: inherit; text-decoration: none; }
 .center{ text-align: center; }
 .mt-20{ margin-top: 20px; }
 
+/* Scroll reveal (load on user scroll) */
+.reveal{
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms ease, transform 700ms cubic-bezier(.2,.9,.2,1);
+  will-change: opacity, transform;
+}
+.reveal.in-view{
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  .reveal{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Ribbon (moved from above the nav) */
 .ribbon{
-  border-top: 1px solid rgba(15,23,42,0.08);
-  border-bottom: 1px solid rgba(15,23,42,0.08);
   background: var(--card3);
   backdrop-filter: blur(10px);
 }
@@ -104,7 +122,6 @@ a{ color: inherit; text-decoration: none; }
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid var(--line);
   background: var(--card3);
   backdrop-filter: blur(14px);
 }
@@ -376,9 +393,9 @@ a{ color: inherit; text-decoration: none; }
   padding: 54px 0;
 }
 .section-alt{
-  background: rgba(255,255,255,0.38);
-  border-top: 1px solid rgba(15,23,42,0.08);
-  border-bottom: 1px solid rgba(15,23,42,0.08);
+  background: transparent;
+  border-top: 0;
+  border-bottom: 0;
 }
 .section-head{
   max-width: 760px;
@@ -474,6 +491,11 @@ a{ color: inherit; text-decoration: none; }
   display:flex;
   align-items:center;
   justify-content:center;
+}
+.gallery-tile img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
 /* Bullets */
@@ -913,7 +935,6 @@ a{ color: inherit; text-decoration: none; }
 
 /* Footer */
 .footer{
-  border-top: 1px solid rgba(15,23,42,0.10);
   padding: 34px 0;
   background: var(--card3);
 }
